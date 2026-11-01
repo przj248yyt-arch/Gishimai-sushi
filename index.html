@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Gishimai Sushi — sabor, qualidade e carinho em cada peça. Faça seu pedido pelo WhatsApp.">
+  <title>Gishimai Sushi | Cardápio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Gishimai Sushi início">
+      <span class="brand-mark">G</span>
+      <span><strong>GISHIMAI</strong><small>S U S H I</small></span>
+    </a>
+    <a class="cart-link" href="#pedido">Meu pedido <span id="cart-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">SUSHI • TEMAKI • MOMENTOS ESPECIAIS</span>
+        <h1>Seu momento<br><em>tem sabor.</em></h1>
+        <p>Peças preparadas com cuidado para transformar sua noite em uma experiência deliciosa.</p>
+        <a class="button button-orange" href="#cardapio">Ver cardápio <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Ilustração decorativa de sushi">
+        <div class="sun"></div>
+        <div class="sushi sushi-one"><i></i></div>
+        <div class="sushi sushi-two"><i></i></div>
+        <div class="sushi sushi-three"><i></i></div>
+        <span class="hero-stamp">FEITO<br>COM<br>CARINHO</span>
+      </div>
+    </section>
+
+    <section class="notice">
+      <span class="notice-dot"></span>
+      <div><strong>Funcionamento</strong><p>Terça, sexta e sábado • 18h às 22h</p></div>
+    </section>
+
+    <section class="menu-section" id="cardapio">
+      <div class="section-heading">
+        <div><span class="eyebrow">ESCOLHA SEUS FAVORITOS</span><h2>Nosso cardápio</h2></div>
+        <p>Adicione seus produtos ao pedido e envie tudo pelo WhatsApp.</p>
+      </div>
+      <nav class="categories" id="categories" aria-label="Categorias do cardápio"></nav>
+      <div class="product-grid" id="products"></div>
+    </section>
+
+    <section class="order-section" id="pedido">
+      <div class="order-intro"><span class="eyebrow">QUASE LÁ!</span><h2>Seu pedido</h2><p>Confira os itens e envie seu pedido para a Gishimai.</p></div>
+      <div class="order-card">
+        <div id="cart-items" class="cart-items"><p class="empty">Seu carrinho ainda está vazio.</p></div>
+        <div class="cart-total"><span>Total</span><strong id="cart-total">R$ 0,00</strong></div>
+        <label for="customer-name">Seu nome</label>
+        <input id="customer-name" type="text" placeholder="Como podemos te chamar?">
+        <label for="customer-address">Endereço de entrega</label>
+        <textarea id="customer-address" rows="2" placeholder="Rua, número, bairro e referência"></textarea>
+        <label for="customer-notes">Observações (opcional)</label>
+        <textarea id="customer-notes" rows="2" placeholder="Ex.: sem cream cheese, ponto de referência..."></textarea>
+        <button class="button button-orange send-button" id="send-order">Enviar pedido pelo WhatsApp</button>
+        <small class="fine-print">O pedido será enviado para confirmação pelo WhatsApp. A entrega e o pagamento serão combinados no atendimento.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">G</span><span><strong>GISHIMAI</strong><small>S U S H I</small></span></a><p>Uma experiência deliciosa em cada pedido.</p><small>© <span id="year"></span> Gishimai Sushi</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
